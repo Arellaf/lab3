@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="wrapper">
+      <div class="search">
+        <label for="search-input" class="search__label">Пошук:</label>
+        <input type="text" class="search__input" id="search-input">
+      </div>
+
+      <div class="controls">
+        <button class="controls__add-button" id="add-btn">Додати</button>
+      </div>
+    </div>
+
+    <table class="table">
+      <tbody class="table__body" id="table-body"></tbody>
+    </table>
+
+  </div>
+
+  <div id="modal-add" class="modal">
+    <div class="modal__content">
+      <button class="modal__content-btn modal__content-btn-top" id="add-close-btn">x</button>
+      <h3 class="modal__content-title">Додати нового студента</h3>
+      <label class="modal__content-label">Ім'я: <input class="modal__content-input" type="text" id="add-first-name"/></label><br/>
+      <label class="modal__content-label">Прізвище: <input class="modal__content-input" type="text" id="add-last-name"/></label><br/>
+      <label class="modal__content-label">Рік народження: <input class="modal__content-input" type="number" id="add-birth-year"/></label><br/>
+      <label class="modal__content-label">Середній бал: <input class="modal__content-input" type="number" id="add-average-grade"/></label><br/>
+      <label class="modal__content-label">Курс: <input class="modal__content-input" type="number" id="add-course"/></label><br/>
+      <button class="modal__content-btn" id="add-save-btn">Зберегти</button>
+      <button class="modal__content-btn" id="add-close-btn">Закрити</button>
+    </div>
+  </div>
+
+  <div id="modal-edit" class="modal">
+    <div class="modal__content">
+      <button class="modal__content-btn modal__content-btn-top" id="edit-close-btn">x</button>
+      <h3 class="modal__content-title">Редагувати студента</h3>
+      <label class="modal__content-label">Ім'я: <input class="modal__content-input" type="text" id="edit-first-name"/></label><br/>
+      <label class="modal__content-label">Прізвище: <input class="modal__content-input" type="text" id="edit-last-name"/></label><br/>
+      <label class="modal__content-label">Рік народження: <input class="modal__content-input" type="number" id="edit-birth-year"/></label><br/>
+      <label class="modal__content-label">Середній бал: <input class="modal__content-input" type="number" id="edit-average-grade"/></label><br/>
+      <label class="modal__content-label">Курс: <input class="modal__content-input" type="number" id="edit-course"/></label><br/>
+      <button class="modal__content-btn" id="edit-save-btn">Зберегти</button>
+      <button class="modal__content-btn" id="edit-cancel-btn">Скасувати</button>
+    </div>
+  </div>
+
+  <div id="modal-delete" class="modal">
+    <div class="modal__content">
+      <button class="modal__content-btn modal__content-btn-top" id="delete-close-btn">x</button>
+      <h3 class="modal__content-title">Ви впевнені?</h3>
+      <p id="delete-confirm-message"></p>
+      <button class="modal__content-btn" id="delete-confirm-btn">Вилучити</button>
+      <button class="modal__content-btn" id="delete-cancel-btn">Скасувати</button>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
